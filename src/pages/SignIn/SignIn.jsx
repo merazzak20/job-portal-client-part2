@@ -4,6 +4,7 @@ import loginLottieJSON from "../../assets/lottie/login.json";
 import AuthContext from "../../context/AuthContext/AuthContext";
 import SocialLogin from "../shared/SocialLogin";
 import { useLocation, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const SignIn = () => {
   const { singInUser } = useContext(AuthContext);
@@ -14,7 +15,6 @@ const SignIn = () => {
 
   const handleSignIn = (e) => {
     e.preventDefault();
-    bf;
     const form = e.target;
     const email = form.email.value;
     const password = form.password.value;
